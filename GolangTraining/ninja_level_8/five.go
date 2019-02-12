@@ -74,19 +74,8 @@ func main() {
 
 	info(&users)
 
-	/*for _, v := range users {
-		fmt.Println(v.First, v.Last, v.Age)
-		sort.Strings(v.Sayings)
-		for _, t := range v.Sayings {
-			fmt.Println("\t", t)
-		}
-	} */
 	fmt.Println("------------------")
 
-	/*sort.Sort(ByAge(users))
-	for _, v := range users {
-		fmt.Println
-	}*/
 	sort.Sort(ByAge(users))
 	info(&users)
 

@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// Set up the pipeline and consume the output.
-	for n := range sq(sq(gen(2, 3))) {
+	for n := range sq(gen(2, 3)) {
 		fmt.Println(n) // 16 then 81
 	}
 }
